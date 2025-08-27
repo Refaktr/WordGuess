@@ -55,22 +55,42 @@ A terminal-based implementation of the popular word-guessing game Wordle, writte
 
 ```
 Wordle-Clone/
-├── wordle.py     # Main game file
-├── 4.txt         # 4-letter word dictionary (2,252 words)
-├── 5.txt         # 5-letter word dictionary (5,757 words)
-├── 6.txt         # 6-letter word dictionary (374 words)
-└── README.md     # This file
+├── wordle.py          # Main game file
+├── 4.txt              # 4-letter word dictionary (2,224 words - filtered)
+├── 5.txt              # 5-letter word dictionary (5,729 words - filtered)
+├── 6.txt              # 6-letter word dictionary (372 words - filtered)
+├── filter_words.py    # Word filtering utility
+├── 4.txt_original     # Original 4-letter word list (backup)
+├── 5.txt_original     # Original 5-letter word list (backup)
+├── 6.txt_original     # Original 6-letter word list (backup)
+└── README.md          # This file
 ```
 
-## 🛠️ Technical Details
+## � Content Filtering
+
+This game uses family-friendly word lists with inappropriate content removed:
+
+- **Words Filtered:** 57 total inappropriate words removed across all difficulty levels
+- **Filter Categories:** Profanity, slurs, explicit content, and offensive terms
+- **Original Lists:** Backed up as `*_original` files
+- **Filter Tool:** `filter_words.py` can be used to re-filter or customize word lists
+
+### Word Count Summary:
+- **4-letter words:** 2,224 (was 2,252, removed 28)
+- **5-letter words:** 5,729 (was 5,757, removed 28) 
+- **6-letter words:** 372 (was 373, removed 1)
+
+## �🛠️ Technical Details
 
 - **Language:** Python 3
 - **Libraries:** Built-in modules only (`random`, `os`)
+- **Word Lists:** Family-friendly content (inappropriate words filtered out)
 - **Features:**
   - Object-oriented design with `LetterTracker` class
   - ANSI escape codes for terminal colors
   - Cross-platform screen clearing
   - Comprehensive input validation
+  - Content filtering for appropriate gameplay
 
 ## 🎨 Screenshots
 

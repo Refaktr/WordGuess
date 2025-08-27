@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Word filtering utility (contains profanity list)
+filter_words.py
+
 # Distribution / packaging
 .Python
 build/

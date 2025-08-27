@@ -118,7 +118,7 @@ def process_guess(guess_word, correct_word, letter_tracker):
 def menu():
     clear_screen()
     print("\n" + "="*50)
-    print("🎮 WELCOME TO WORDLE! 🎮")
+    print("🎮 WELCOME TO WORDGUESS! 🎮")
     print("="*50)
     print("1. Easy Game (4-letter words)")
     print("2. Medium Game (5-letter words)")

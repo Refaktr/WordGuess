@@ -1,6 +1,6 @@
-# Python Wordle Clone 🎯
+# Python WordGuess Game 🎯
 
-A terminal-based implementation of the popular word-guessing game Wordle, written in Python. This clone features multiple difficulty levels and a clean, colorful interface.
+A terminal-based implementation of a word-guessing game, written in Python. This game features multiple difficulty levels and a clean, colorful interface.
 
 ## 🎮 Features
 
@@ -31,12 +31,12 @@ A terminal-based implementation of the popular word-guessing game Wordle, writte
 1. Clone this repository:
    ```bash
    git clone <your-repo-url>
-   cd Wordle-Clone
+   cd WordGuess-Game
    ```
 
 2. Run the game:
    ```bash
-   python wordle.py
+   python wordguess.py
    ```
 
 3. Choose your difficulty level and start guessing!
@@ -54,8 +54,8 @@ A terminal-based implementation of the popular word-guessing game Wordle, writte
 ## 📁 Project Structure
 
 ```
-Wordle-Clone/
-├── wordle.py          # Main game file
+WordGuess-Game/
+├── wordguess.py       # Main game file
 ├── 4.txt              # 4-letter word dictionary (2,224 words - filtered)
 ├── 5.txt              # 5-letter word dictionary (5,729 words - filtered)
 ├── 6.txt              # 6-letter word dictionary (372 words - filtered)
@@ -95,16 +95,12 @@ This game uses family-friendly word lists with inappropriate content removed:
 ## 🎨 Screenshots
 
 ```
-🎯 Guess the 5-letter word!
-Good luck! 🍀
-Guess 1/6
-
+� WELCOME TO WORDGUESS! �
 ==================================================
-ALPHABET STATUS:
-==================================================
- A  B  C  D  E  F  G  H  I  J 
-   K  L  M  N  O  P  Q  R  S 
-      T  U  V  W  X  Y  Z 
+1. Easy Game (4-letter words)
+2. Medium Game (5-letter words)
+3. Hard Game (6-letter words)
+4. Exit
 ==================================================
 🟩 Correct | 🟨 Wrong position | 🟥 Not in word | ⬜ Not guessed
 ==================================================
@@ -131,9 +127,10 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
-- Inspired by the original Wordle game by Josh Wardle
-- Word lists compiled from various public domain dictionaries
+- Inspired by word-guessing games and puzzle mechanics
+- Word lists compiled from various public domain dictionaries  
 - Built as a learning project to practice Python programming
+- Created as an original implementation of word-guessing gameplay
 
 ## 🐛 Known Issues
 

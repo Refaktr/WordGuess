@@ -210,11 +210,11 @@ def game_loop():
         colored_guess = process_guess(guess_word, correct_word, letter_tracker)
         colored_guesses.append(colored_guess)
         
-        if guess_word == correct_word:
+        if guess_word.lower() == correct_word.lower():
             # Clear screen and show final state
             clear_screen()
             print(f"\n🎯 Guess the {len(correct_word)}-letter word!")
-            print("🎉 CONGRATULATIONS! �")
+            print("🎉 CONGRATULATIONS! 🎉")
             print(f"You won in {guess_count}/{max_guesses} guesses!")
             
             # Show final alphabet state

@@ -9,6 +9,18 @@ __pycache__/
 # Word filtering utility (contains profanity list)
 filter_words.py
 
+# Icon creation utilities
+create_icon.py
+convert_icon.py
+
+# Virtual environment
+venv_wordguess/
+
+# PyInstaller build files
+build/
+dist/
+*.spec
+
 # Distribution / packaging
 .Python
 build/
@@ -208,3 +220,5 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+venv_wordguess/
